@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: serif;
+  line-height: 1;
+  font-weight: 400;
+  color: rgb(22, 22, 22);
+  overflow-x: hidden;
+  margin: 0 2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 0, 0.427), rgb(255, 255, 255));
+  background-size: 200% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+a {
+  color: initial;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  padding: 4.4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+  background-color: aqua;
+  align-items: center;
+  border: 1px solid rgb(20, 20, 20);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+header button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1.2rem 1.6rem;
+  margin-top: 3.2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.top-header {
+  background-color: none;
+  text-transform: capitalize;
+  padding: 1.2rem 0;
+  font-size: 2.4rem;
+}
+
+main {
+  background-color: rgba(165, 42, 42, 0.664);
+  z-index: 5;
+  display: grid;
+  padding-top: 4.4rem;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 3.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+.style-1 {
+  display: inline;
+  padding: 2rem;
+}
+
+del {
+  font-size: 2.4rem;
+}
+
+ins {
+  font-size: 4.4rem;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+h4,
+h2 {
+  font-size: 4.4rem;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+  max-width: 80vw;
+  font-weight: 300;
+  line-height: 1.2;
+  text-decoration: underline;
+  border: 1px dotted #ccc;
+}
+
+section,
+h2 {
+  text-align: center;
+  padding: 4.4rem 0;
+}
+
+h3 {
+  font-size: 3.6rem;
+  padding-bottom: 2rem;
+}
+
+.img-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4.4rem;
+  background-color: azure;
+}
+
+.img-box img:first-child {
+  width: 50%;
+}
+
+.table-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border: 1px solid rgb(34, 34, 34);
+  padding: 3.2rem 1.2rem;
+}
+
+table tr th {
+  font-size: 4.4rem;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-bottom: 2.2rem;
+}
+
+
+td {
+  font-size: 3.2rem;
+  padding: 1.6rem;
+  letter-spacing: 1px;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.main div:hover,
+tr:last-child {
+  background-color: rgba(184, 184, 184, 0.308);
+}
+
+table td {
+  text-transform: capitalize;
+}
+
+p {
+  text-transform: capitalize;
+  font-size: 3.6rem;
+  text-decoration: dashed;
+  padding: 2.4rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.category {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.category div {
+  display: block;
+  width: fit-content;
+}
+
+.category div img {
+  width: fit-content;
+  height: max-content;
+}
+
+.amount {
+  text-align: center;
+}
+
+@media(max-width: 64em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width: 48em) {
+  html {
+    font-size: 48.25%;
+  }
+
+  .img-box img:first-child {
+    width: 100%;
+  }
+}
+
+@media(max-width: 37em) {
+  html {
+    font-size: 40.25%;
+  }
+
+  .category {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 70vw;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  table {
+    padding: 0;
+  }
+
+  td {
+    font-size: 2.8rem;
+  }
+}
+
+@media(max-width: 37em) {
+  html {
+    font-size: 35.25%;
+  }
+}
